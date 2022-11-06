@@ -65,7 +65,13 @@ jobs:
        python -m pip install scons
        python --version
        scons --version
-
+       
+    - name: Setup Vulkan SDK
+      run: |
+          cd ./godot
+          sh misc/scripts/install_vulkan_sdk_macos.sh
+          cd ../
+    
     - name: Compilation
       env:
         SCONS_CACHE: ${{github.workspace}}/.scons_cache/
