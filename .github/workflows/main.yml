@@ -10,7 +10,7 @@ on:
 # Global Settings
 env:
   GODOT_BASE_BRANCH: master
-  SCONSFLAGS: platform=macos verbose=yes warnings=extra werror=yes debug_symbols=no --jobs=2 module_text_server_fb_enabled=yes
+  SCONSFLAGS: platform=macos verbose=yes warnings=extra werror=yes debug_symbols=no --jobs=2 module_text_server_fb_enabled=yes CCFLAGS="-Wno-inconsistent-missing-override"
   SCONS_CACHE_LIMIT: 4096
 
 jobs:
