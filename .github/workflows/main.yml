@@ -16,7 +16,7 @@ env:
 jobs:
   macos-editor:
     runs-on: "macos-latest"
-    name: Editor (target=release_debug, tools=yes, tests=yes)
+    name: Editor (target=release_debug, tools=yes, tests=no)
 
     steps:
     - name: Make godot dir
